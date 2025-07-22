@@ -1,4 +1,3 @@
-import React from 'react';
 import { FolderCheck, ShieldCheck, TimerReset } from 'lucide-react';
 
 const overview = [

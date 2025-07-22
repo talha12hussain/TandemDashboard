@@ -1,4 +1,3 @@
-import React from 'react';
 import { Menu, Search, Bell } from 'lucide-react';
 
 type Props = {
