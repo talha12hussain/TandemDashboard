@@ -1,5 +1,5 @@
 // src/Pages/Dashboard.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Sidebar from '../Components/Sidebar';
 import Header from '../Components/Header';
 import MetricCards from '../Components/MetricCards';

@@ -16,21 +16,21 @@ const SatisfactionSection = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {scores.map((s, idx) => (
-          <div
-  className={`p-4 rounded-xl border text-center transition ${
-    s.stage === 'Complete' ? 'border-[3px]' : 'border'
-  }`}
-  style={{ borderColor: s.stage === 'Complete' ? '#4D43E4' : '#E5E7EB' }}
->
+       {scores.map((s) => (
+  <div
+    className={`p-4 rounded-xl border text-center transition ${
+      s.stage === 'Complete' ? 'border-[3px]' : 'border'
+    }`}
+    style={{ borderColor: s.stage === 'Complete' ? '#4D43E4' : '#E5E7EB' }}
+  >
+    <p className="text-sm text-gray-500">{s.stage}</p>
+    <h3 className="text-xl font-bold">{s.score}/10</h3>
+    <p className="text-xs text-gray-400">
+      {s.satisfiedCount}/{s.total} Satisfied
+    </p>
+  </div>
+))}
 
-            <p className="text-sm text-gray-500">{s.stage}</p>
-            <h3 className="text-xl font-bold">{s.score}/10</h3>
-            <p className="text-xs text-gray-400">
-              {s.satisfiedCount}/{s.total} Satisfied
-            </p>
-          </div>
-        ))}
       </div>
     </div>
   );
