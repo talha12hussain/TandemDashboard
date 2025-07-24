@@ -23,36 +23,36 @@ const MetricCard = ({
             : "bg-white text-gray-900 shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
         }`}
     >
-      {/* Badge */}
-    {/* Badge */}
-{/* Badge Wrapper */}
-<div className="flex items-center gap-2">
-  {/* Left White Circle Icon */}
-  <span
-    className="w-[28px] h-[28px] flex justify-center items-center rounded-full "
-  >
-    <img src={TagIcon} alt="icon" className="w-100 h-100 object-contain" />
-  </span>
+      {/* Badge Wrapper */}
+      <div className="flex items-center gap-2">
+        {/* Left White Circle Icon */}
+        <span className="w-[28px] h-[28px] flex justify-center items-center rounded-full">
+          <img src={TagIcon} alt="icon" className="w-full h-full object-contain" />
+        </span>
 
-  {/* Badge */}
-  <div
-    className={`inline-flex items-center gap-2 px-3 py-[6px] rounded-full text-[11px] font-medium
-      ${gradient ? "bg-white/60 text-[#4D43E4]" : "bg-green-100 text-green-800"}`}
-  >
-    {/* Badge Icon */}
-    <span
-      className={`flex items-center justify-center text-xs
-      ${gradient ? "text-white" : "text-green-600"}`}
-    >
-      {badgeIcon}
-    </span>
+        {/* Badge */}
+        <div
+          className={`inline-flex items-center gap-2 px-3 py-[6px] rounded-full text-[11px] font-medium
+            ${
+              gradient
+                ? "bg-white/60 text-[#4D43E4]"
+                : "bg-green-100 text-green-800"
+            }`}
+        >
+          {/* Badge Icon */}
+          <span
+            className={`flex items-center justify-center text-xs
+              ${gradient ? "text-white" : "text-green-600"}`}
+          >
+            {badgeIcon}
+          </span>
 
-    {/* Badge Text */}
-    <span className={`${gradient ? "text-white" : "text-green-700"}`}>
-      {badgeText}
-    </span>
-  </div>
-</div>
+          {/* Badge Text */}
+          <span className={`${gradient ? "text-white" : "text-green-700"}`}>
+            {badgeText}
+          </span>
+        </div>
+      </div>
 
       {/* Value & Label */}
       <div className="mt-6">
