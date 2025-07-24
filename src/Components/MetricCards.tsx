@@ -1,4 +1,4 @@
-import { ArrowRight, TrendingUp, Clock3, Percent } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
 import TagIcon from "../assets/Chart (3).png";
 
 const MetricCard = ({
@@ -40,15 +40,12 @@ const MetricCard = ({
             }`}
         >
           {/* Badge Icon */}
-          <span
-            className={`flex items-center justify-center text-xs
-              ${gradient ? "text-white" : "text-green-600"}`}
-          >
+          <span className={`flex items-center justify-center text-xs ${gradient ? "text-white" : "text-green-600"}`}>
             {badgeIcon}
           </span>
 
           {/* Badge Text */}
-          <span className={`${gradient ? "text-white" : "text-green-700"}`}>
+          <span className={gradient ? "text-white" : "text-green-700"}>
             {badgeText}
           </span>
         </div>
@@ -57,11 +54,7 @@ const MetricCard = ({
       {/* Value & Label */}
       <div className="mt-6">
         <h3 className="text-[32px] font-bold leading-tight">{value}</h3>
-        <p
-          className={`text-[14px] mt-1 ${
-            gradient ? "text-white/80" : "text-gray-500"
-          }`}
-        >
+        <p className={`text-[14px] mt-1 ${gradient ? "text-white/80" : "text-gray-500"}`}>
           {label}
         </p>
       </div>
@@ -75,11 +68,7 @@ const MetricCard = ({
               : "bg-gray-100 hover:bg-gray-200"
           } transition`}
       >
-        <ArrowRight
-          className={`w-[18px] h-[18px] -rotate-30 ${
-            gradient ? "text-white" : "text-gray-700"
-          }`}
-        />
+        <ArrowRight className={`w-[18px] h-[18px] -rotate-30 ${gradient ? "text-white" : "text-gray-700"}`} />
       </div>
     </div>
   );
